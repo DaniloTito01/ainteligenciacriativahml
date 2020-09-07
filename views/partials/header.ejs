@@ -487,7 +487,7 @@ function validacaoCampo(){
     if( dadosValidacao.nome=="OK"  && dadosValidacao.email=="OK"  && dadosValidacao.telefone=="OK"  
     && dadosValidacao.estado=="OK"  && dadosValidacao.cidade=="OK"  ){
 
-        postEmeil();
+      var teste= await    postEmeil();
 
      document.querySelector('#inputNome').value = '';
      document.querySelector('#inputEmail').value= '';
