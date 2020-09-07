@@ -6,6 +6,6 @@ app.get('/app', function (req, res) {
 });
 
 
-var port = process.env.port || 3000;
+const PORT = process.env.PORT || 3000;
 
-app.listen(port);
+app.listen(PORT);
