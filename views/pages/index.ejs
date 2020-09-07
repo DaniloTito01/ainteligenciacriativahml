@@ -554,7 +554,7 @@
         const  dadosEnvio =JSON.stringify({dados})
         
         console.log(dadosEnvio);
-        const myRequest = await new Request('https://www.ainteligenciacriativa.com.br:3000/' ,
+        const myRequest = await new Request('http://www.ainteligenciacriativa.com.br:3000/' ,
         {method: 'POST', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json'},  body:dadosEnvio});
         
         const myURL = await myRequest.url;
