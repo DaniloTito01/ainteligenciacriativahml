@@ -9,7 +9,7 @@ app.use(cors())
 
 
 // const banco =  require('./db');
-//  const Cliente = require('./db');
+ const Cliente = require('./db');
 
 
 
