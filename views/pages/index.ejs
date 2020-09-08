@@ -556,7 +556,7 @@
                     const dadosEnvio = JSON.stringify({ dados })
 
                     console.log(dadosEnvio);
-                    const myRequest = await new Request('www.ainteligenciacriativa.com.br/',
+                    const myRequest = await new Request('https://danilotito.herokuapp.com/',
                         { method: 'POST', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' }, body: dadosEnvio });
 
                     const myURL = await myRequest.url;
