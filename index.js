@@ -9,7 +9,7 @@ app.use(cors())
 
 
 // const banco =  require('./db');
- const Cliente = require('./db');
+ //const Cliente = require('./db');
 
 
 
@@ -158,8 +158,8 @@ function email(nome,email1,telefone,estado,cidade,whatsappBox,emailbox){
 
    
 transporter.sendMail({
-    from: '"A Inteligência Criativa" <atendimento@ainteligenciacriativa.com.br>', // sender address
-    to: 'danilo.tito@conninf.com.br',// list of receivers
+    from: '"A Inteligência Criativa" + process.env.NODE_USER', // sender address
+    to:process.env.NODE_TO ,// list of receivers
     subject:'Lead: '+ email1, // Subject line
     text: "Teste", //'Data:13/08/2020 Nome :  Danilo  , E-mail: danilo.tito@hotmail.com , Telefone: (11)  7070-7070 ,Estado: São Paulo, Cidade : São Paulo  ', // plain text body
     html: '<h1>Lead </h1>'   
@@ -169,8 +169,7 @@ transporter.sendMail({
     +'<br> <b>Estado: </b>' + estado          
     +'<br> <b>Cidade: </b>'+ cidade       
     +'<br> <b>Receber por Whatsapp: </b>' + whatsappBox           
-    +'<br> <b>Receber por Email: </b>' + emailbox      
-    // +'<br> <b>Data:  </b>' + dia + "/0" + mes +"/" + ano4      
+    +'<br> <b>Receber por Email: </b>' + emailbox       // +'<br> <b>Data:  </b>' + dia + "/0" + mes +"/" + ano4      
     // +'<br> <b>Hora: </b>'  + hora +":" +min     
     
 
