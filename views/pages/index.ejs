@@ -574,7 +574,7 @@
                 alert("Dados enviados com sucesso!");
            
                
-                return response.json();
+                return await response.json();
             } else {
               throw new Error('Ops! Houve um erro em nosso servidor.');
             }
