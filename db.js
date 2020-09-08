@@ -16,7 +16,7 @@ var Sequelize  = require('sequelize');
       console.log('ERRO' + err);
     })
   
-    const Cliente = sequelize.define('lead',{
+    const Cliente = sequelize.define('leads',{
       nome:{
         type : Sequelize.STRING,
       },
@@ -39,8 +39,10 @@ var Sequelize  = require('sequelize');
         type : Sequelize.STRING,
       }
     });
+
+    console.log("Passou  aqui Banco")
   
-  Cliente.sync({force:true});
+   //Cliente.sync({force:true});
   
   
 
