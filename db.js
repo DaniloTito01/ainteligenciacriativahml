@@ -1,4 +1,4 @@
-const Sequelize  = require('sequelize');
+var Sequelize  = require('sequelize');
 
 
 mysql://b7c2d4c822cc9a:72cd6e07@us-cdbr-east-02.cleardb.com/heroku_00a65bf38f2d8c4?reconnect=true
