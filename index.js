@@ -34,7 +34,7 @@ var min     = data.getMinutes();
 
 
 
-console.log(process.env.CLEARDB.DATABASE.URL);
+
 
 
 
