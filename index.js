@@ -8,8 +8,8 @@ const PORT = process.env.PORT || 5000
 app.use(cors())
 
 
-const banco =  require('./db');
- const Cliente = require('./db');
+// const banco =  require('./db');
+//  const Cliente = require('./db');
 
 
 
