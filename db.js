@@ -6,6 +6,9 @@ var Sequelize  = require('sequelize');
       host: 'us-cdbr-east-02.cleardb.com',
       dialect:  'mysql' /* one of | 'mariadb' | 'postgres' | 'mssql' */
     });
+
+
+    
   
     sequelize.authenticate().then(function(){
       console.log('OK');
