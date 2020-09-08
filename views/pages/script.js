@@ -550,44 +550,4 @@ var obj = {
 }
 
 
-/*Teste*/
-
-
-
-
-
-
-
-
-
-
-
-
-// window.addEventListener("scroll", function () {
-//     var  header =  document.querySelector("header");
-//     header.classList.toggle("sticky",window.scrollY > 0);
-
-
-// })
-
-// function toggle(){
-
-//     var  header =  document.querySelector('#enviarForm');
-//     header.classList.toggle("active");
-//     console.log('dfdfdfd');
-
-// }
-
-// window.addEventListener('submit', Gravar());
-
-
-// function Gravar(){
-//     console.log("Gravar")
-//     var  nome =  document.querySelector(".nome");
-
-//     var 
-
-
-
-
-// }
+module.exports =Script;
