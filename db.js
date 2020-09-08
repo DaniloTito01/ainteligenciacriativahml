@@ -42,7 +42,7 @@ var Sequelize  = require('sequelize');
 
     console.log("Passou  aqui Banco")
   
-   Cliente.sync({force:true});
+   //Cliente.sync({force:true});
   
   
 
