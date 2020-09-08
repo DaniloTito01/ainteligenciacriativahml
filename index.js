@@ -138,9 +138,13 @@ app.listen(PORT ,() => {
 
 function email(nome,email1,telefone,estado,cidade,whatsappBox,emailbox){
 
-//dadosEmail.nome =dadoss.dados.nome;
+  var data = new Date();
+  var dia     = data.getDate();           // 1-31
+  var mes     = 1 +data.getMonth();          // 0-11 (zero=janeiro) 
+  var ano4    = data.getFullYear();  
+  var hora    = data.getHours();          // 0-23
+  var min     = data.getMinutes();   
 
-     // 0-59
 
 
     const nodemailer = require('nodemailer');
@@ -150,8 +154,10 @@ function email(nome,email1,telefone,estado,cidade,whatsappBox,emailbox){
         port: 465,
         secure: true,
         auth: {
-            user: 'atendimento@ainteligenciacriativa.com.br',
-            pass: 'V123asd456@'
+            user: process.env.NODE_USER,   
+            pass: process.env.NODE_PASS        
+
+
         }
     });
     
@@ -169,8 +175,9 @@ transporter.sendMail({
     +'<br> <b>Estado: </b>' + estado          
     +'<br> <b>Cidade: </b>'+ cidade       
     +'<br> <b>Receber por Whatsapp: </b>' + whatsappBox           
-    +'<br> <b>Receber por Email: </b>' + emailbox       // +'<br> <b>Data:  </b>' + dia + "/0" + mes +"/" + ano4      
-    // +'<br> <b>Hora: </b>'  + hora +":" +min     
+    +'<br> <b>Receber por Email: </b>' + emailbox      
+     +'<br> <b>Data:  </b>' + dia + "/0" + mes +"/" + ano4      
+    +'<br> <b>Hora: </b>'  + hora +":" +min     
     
 
 }).then(messge =>{
