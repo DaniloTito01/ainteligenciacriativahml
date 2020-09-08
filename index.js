@@ -169,8 +169,8 @@ transporter.sendMail({
     +'<br> <b>Cidade: </b>'+ cidade       
     +'<br> <b>Receber por Whatsapp: </b>' + whatsappBox           
     +'<br> <b>Receber por Email: </b>' + emailbox      
-    +'<br> <b>Data:  </b>' + dia + "/0" + mes +"/" + ano4      
-    +'<br> <b>Hora: </b>'  + hora +":" +min     
+    // +'<br> <b>Data:  </b>' + dia + "/0" + mes +"/" + ano4      
+    // +'<br> <b>Hora: </b>'  + hora +":" +min     
 
 }).then(messge =>{
   console.log(messge);
