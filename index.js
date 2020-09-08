@@ -171,11 +171,14 @@ transporter.sendMail({
     +'<br> <b>Receber por Email: </b>' + emailbox      
     // +'<br> <b>Data:  </b>' + dia + "/0" + mes +"/" + ano4      
     // +'<br> <b>Hora: </b>'  + hora +":" +min     
+    
 
 }).then(messge =>{
   console.log(messge);
+  console.log("sdsdsds");
 }).catch(err =>{
 console.log(err)
+console.log("Erro");
 })
 
 
