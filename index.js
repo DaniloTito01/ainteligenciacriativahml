@@ -8,7 +8,6 @@ const PORT = process.env.PORT || 5000
 app.use(cors())
 require('dotenv/config');
 
-const banco =  require('./db');
  const Cliente = require('./db');
 
 
@@ -96,8 +95,7 @@ app.post("/", (req, res ) =>{
    
      })
      console.log("Passou  aqui")
-    banco.gravarBanco(dadoss.dados.nome,dadoss.dados.email,dadoss.dados.telefone,dadoss.dados.estado,dadoss.dados.cidade,dadoss.dados.whatsappBox,dadoss.dados.emailbox);
-
+  
  
 
  }});
