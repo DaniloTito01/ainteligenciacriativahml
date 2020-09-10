@@ -535,7 +535,7 @@
                     dados.cidade = document.querySelector('#inputCidade').value;
 
 
-                    console.log(dadosValidacao);
+                   
                     validaCidade();
 
                     validacaoCampo()
@@ -555,8 +555,8 @@
 
                     const dadosEnvio = JSON.stringify({ dados })
 
-                    console.log(dadosEnvio);
-                    const myRequest = await new Request('https://danilotito.herokuapp.com/',
+                   
+                    const myRequest = await new Request('http://www.ainteligenciacriativa.com.br/',
                         { method: 'POST', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' }, body: dadosEnvio });
 
                     const myURL = await myRequest.url;
@@ -572,7 +572,7 @@
                         .then(response => {
                             if (response.status === 200) {
 
-                                console.log(response);
+                               
                                 alert("Dados enviados com sucesso!");
 
 
@@ -625,39 +625,6 @@
 
                 }
 
-
-
-
-                function post_to_url() {
-
-
-
-                    var obj = {
-                        "Nome": "Danilo",
-                        "Email": "danilo.tito@conninf.com.br",
-                        "Telefone": "(11) 941341992",
-                        "Estado": "São Paulo",
-                        "Cidade": "São  Paulo",
-                        "Whats": "SIM",
-                        "Email1": "SIM"
-                    };
-
-
-
-                    (async () => {
-                        const rawResponse = await fetch('http://localhost:3000', {
-                            method: 'POST',
-                            headers: {
-                                'Accept': 'application/json',
-                                'Content-Type': 'application/json'
-                            },
-                            body: JSON.stringify({ obj })
-                        });
-                        const content = await rawResponse.json();
-
-                        console.log(content);
-                    })();
-                }
 
 
 
