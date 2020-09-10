@@ -152,7 +152,7 @@ function email(nome,email1,telefone,estado,cidade,whatsappBox,emailbox){
       +'<br> <b>Receber por Whatsapp: </b>' + whatsappBox           
       +'<br> <b>Receber por Email: </b>' + emailbox      
        +'<br> <b>Data:  </b>' + dia + "/0" + mes +"/" + ano4      
-      +'<br> <b>Hora: </b>'  + hora +":" +min     
+      +'<br> <b>Hora: </b>'  +(hora -3 ) +":" +min     
       
   
   }).then(messge =>{
